@@ -1,0 +1,40 @@
+package org.jsp.app6;
+
+class Employee
+{
+	int age;
+	String name;
+	double salary;
+	public void empInfo() {
+		System.out.println("employee detailes :");
+	}
+	Employee()
+	{
+		int empId=8095106;
+		System.out.println("employee number is :"+empId);
+	}
+	Employee(int age,String name,double salary)
+	{
+		this();
+		empInfo();
+		this.age=age;
+		this.name=name;
+		this.salary=salary;
+		System.out.println("Student name :"+this.name+" "+"age:"+this.age+" "+"salary :"+this.salary);
+	}
+}
+
+public class ConstractorWithDataFunctionANDMembers {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Employee e=new Employee(24,"ramudu",27006.5);
+	}
+
+}
+
+OutPut:-
+employee number is :8095106
+employee detailes :
+Student name :ramudu age:24 salary :27006.5

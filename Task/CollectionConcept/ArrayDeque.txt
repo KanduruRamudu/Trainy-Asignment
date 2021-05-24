@@ -1,0 +1,59 @@
+package org.jsp.app9;
+
+import java.util.ArrayDeque;
+
+public class ArrayDequeMainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		ArrayDeque<Integer> ad=new ArrayDeque<Integer>();
+		ad.add(873);
+		ad.add(456);
+		ad.add(87);
+		ad.add(354);
+		ad.add(8);
+		ad.add(76);
+		ad.add(45);
+		System.out.println(ad);
+		ad.offer(999);
+		System.out.println(ad);
+		ad.offer(2);
+		System.out.println(ad);
+		ad.offerFirst(10);
+		System.out.println(ad);
+		ad.offerLast(13);
+		System.out.println(ad);
+		System.out.println(ad.pollFirst());
+		System.out.println(ad);
+		System.out.println(ad.pollLast());
+		System.out.println(ad);
+		System.out.println(ad.pop());
+		System.out.println(ad);
+		System.out.println(ad.poll());
+		System.out.println(ad);
+		System.out.println(ad.peekLast());
+		System.out.println(ad);
+		ad.push(23);
+		System.out.println(ad);
+		
+	}
+
+}
+output:-
+[873, 456, 87, 354, 8, 76, 45]
+[873, 456, 87, 354, 8, 76, 45, 999]
+[873, 456, 87, 354, 8, 76, 45, 999, 2]
+[10, 873, 456, 87, 354, 8, 76, 45, 999, 2]
+[10, 873, 456, 87, 354, 8, 76, 45, 999, 2, 13]
+10
+[873, 456, 87, 354, 8, 76, 45, 999, 2, 13]
+13
+[873, 456, 87, 354, 8, 76, 45, 999, 2]
+873
+[456, 87, 354, 8, 76, 45, 999, 2]
+456
+[87, 354, 8, 76, 45, 999, 2]
+2
+[87, 354, 8, 76, 45, 999, 2]
+[23, 87, 354, 8, 76, 45, 999, 2]

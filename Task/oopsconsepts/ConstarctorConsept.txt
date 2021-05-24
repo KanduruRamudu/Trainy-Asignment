@@ -1,0 +1,30 @@
+package org.jsp.app6;
+
+class Test
+{
+	
+	Test()
+	{
+		int a=10;
+		System.out.println("integer number is :"+a);
+	}
+	Test(int marks,String name,double avg)
+	{
+		this();
+		
+		System.out.println("Student name :"+name+" "+"marks:"+marks+" "+"total avg :"+avg);
+	}
+}
+public class ConstactorConsept {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Test t1=new Test(98,"ramu",78.5);
+	}
+
+}
+
+OutPut:-
+integer number is :10
+Student name :ramu marks:98 total avg :78.5

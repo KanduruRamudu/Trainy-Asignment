@@ -1,0 +1,40 @@
+package org.jsp.app10;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+public class FileInputOutputStreamMainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		try 
+		{
+			FileInputStream input=new FileInputStream("input.txt");
+			System.out.println("Data is :");
+			int i=input.read();
+			while(i!=-1)
+			{
+				System.out.print((char) i);
+				i=input.read();
+			}
+			System.out.println("closing file:");
+			input.close();
+		}
+		
+		
+		catch (Exception e) {
+			// TODO Auto-generated catch block
+			System.out.println("oops problem is there!!!");
+			System.out.println(e);
+			e.getStackTrace();
+		}
+
+	}
+
+}
+output:-
+Data is :
+i am ramudu
+i am in virtusa company
+closing file:

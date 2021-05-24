@@ -1,0 +1,28 @@
+package org.jsp.app8;
+
+class Sample implements Runnable
+{
+
+	@Override
+	public void run() 
+	{
+	
+		System.out.println("interface");
+	}
+	
+}
+public class RanabelTereadMainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Sample s=new Sample();
+		Thread t=new Thread(s);
+		t.start();
+		//t.start();
+	}
+
+}
+
+output:-
+interface

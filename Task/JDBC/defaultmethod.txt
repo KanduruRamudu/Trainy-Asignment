@@ -1,0 +1,25 @@
+package org.jsp.app12;
+
+interface Dmethods
+{
+	public static int num=100;
+	public default void display()
+	{
+		System.out.println("display method of dmethoosdds");
+	}
+}
+public class DeafultMethodsMainClass implements Dmethods{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Dmethods obj=new DeafultMethodsMainClass();
+		obj.display();
+		System.out.println(obj.num);
+		
+	}
+
+}
+output:-
+display method of dmethoosdds
+100

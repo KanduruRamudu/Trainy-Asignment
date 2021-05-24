@@ -1,0 +1,32 @@
+package day7;
+
+abstract class Person
+
+{
+	abstract void run();
+}
+class Men extends  Person
+{
+
+	@Override
+	void run() {
+		// TODO Auto-generated method stub
+		System.out.println("move to fast");
+		
+	}
+	
+}
+
+public class AbstactClass {
+
+	public static void main(String[] args) {
+	
+		Men m =new Men();
+		m.run();
+	}
+	
+
+}
+
+output:-
+move to fast

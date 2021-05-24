@@ -1,0 +1,37 @@
+package org.jsp.app12;
+
+interface Smethods
+{
+	public static int num=500;
+	public void demo();
+	public static void display()
+	{
+		System.out.println("display method of smethoosdds");
+	}
+}
+
+
+public class StaticMethodsMainClass implements Smethods {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Smethods obj=new StaticMethodsMainClass();
+
+		obj.demo();
+		Smethods.display();
+
+		System.out.println(obj.num);
+	}
+
+	@Override
+	public void demo() {
+		// TODO Auto-generated method stub
+		System.out.println("thid is the implemented of the demo method");
+		
+	}
+
+}
+output:-
+thid is the implemented of the demo method
+display method of smethoosdds
+500

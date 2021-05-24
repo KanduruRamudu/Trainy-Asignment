@@ -1,0 +1,48 @@
+package org.jsp.app6;
+
+import java.util.Scanner;
+
+public class WorkOnControlStatements {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("enter age :");
+		int age=scanner.nextInt();
+		System.out.println("enter n value :");
+		int n=scanner.nextInt();
+		if(age>=18)
+		{
+			System.out.println("eligible for vote ");
+		}
+		else
+		{
+			System.out.println("not eligible for vote");
+		}
+		while(n>=0)
+		{
+			System.out.println(n);
+			n--;
+		}
+		for(char i=65;i<91;i++)
+		{
+			System.out.print(i+" ");
+		}
+	}
+
+}
+
+output:-
+enter age :
+25
+enter n value :
+5
+eligible for vote 
+5
+4
+3
+2
+1
+0
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 

@@ -1,0 +1,46 @@
+package org.jsp.app9;
+
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+
+public class LinkedListMainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<String> ll=new LinkedList<String>();
+		ll.add("ram");
+		ll.add("raju");
+		ll.add("ravi");
+		ll.add("tah");
+
+		ll.set(2, "gop");
+		System.out.println(ll);
+		int n1=ll.indexOf("ram");
+		System.out.println(n1);
+		int n2=ll.lastIndexOf("raviu");
+		System.out.println(n2);
+		Collections.sort(ll);
+		System.out.println(ll);
+		boolean n6=ll.contains("ram");
+		System.out.println(n6);
+		Iterator<String> it=ll.iterator();
+		while(it.hasNext())
+		{
+			System.out.print(it.next()+" ");
+		}
+		ll.clear();
+		System.out.println(ll);
+
+
+	}
+
+}
+output:-
+[ram, raju, gop, tah]
+0
+-1
+[gop, raju, ram, tah]
+true
+gop raju ram tah []

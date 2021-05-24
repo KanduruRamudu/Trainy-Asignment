@@ -1,0 +1,40 @@
+package day7;
+
+interface Animal
+{
+	void sound();
+}
+interface Dog extends Animal
+{
+	void runSpeed();
+}
+class DogInfo implements Animal,Dog
+{
+
+	@Override
+	public void runSpeed() {
+		// TODO Auto-generated method stub
+		System.out.println("dog can run 10kmph speed ");
+	}
+
+	@Override
+	public void sound() {
+		// TODO Auto-generated method stub
+		System.out.println("bow bow");
+	}
+	
+}
+public class InterFaceMainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		DogInfo d=new DogInfo();
+		d.sound();
+		d.runSpeed();
+	}
+
+}
+output:-
+bow bow
+dog can run 10kmph speed 

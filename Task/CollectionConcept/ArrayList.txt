@@ -1,0 +1,51 @@
+package org.jsp.app9;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.List;
+
+public class ArraylistMainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<Integer> al=new ArrayList();
+		al.add(23);
+		al.add(54);
+		al.add(78);
+		al.add(65);
+
+		al.forEach(n->System.out.println(n));
+		
+		/*al.set(2, 52);
+		System.out.println(al);
+		int n1=al.indexOf(54);
+		System.out.println(n1);
+		int n2=al.lastIndexOf(al);
+		System.out.println(n2);
+		Collections.sort(al);
+		System.out.println(al);
+		boolean n6=al.contains(23);
+		System.out.println(n6);
+		Iterator<Integer> it=al.iterator();
+		while(it.hasNext())
+		{
+			System.out.print(it.next()+" ");
+		}
+		al.clear();
+		System.out.println(al);*/
+		
+		}
+
+}
+output:-
+23
+54
+78
+65
+[23, 54, 52, 65]
+1
+-1
+[23, 52, 54, 65]
+true
+23 52 54 65 []

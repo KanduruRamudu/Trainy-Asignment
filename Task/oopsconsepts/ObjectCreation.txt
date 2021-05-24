@@ -1,0 +1,19 @@
+package org.jsp.app6;
+
+public class ObjectConsept {
+
+	public void move()
+	{
+		System.out.println("move forword");
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		ObjectConsept oc=new ObjectConsept();
+		oc.move();
+	}
+
+}
+
+OutPut:-
+move forword

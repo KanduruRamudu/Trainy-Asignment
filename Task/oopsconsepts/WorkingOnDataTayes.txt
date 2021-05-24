@@ -1,0 +1,36 @@
+package org.jsp.app6;
+
+public class WorkingOnDataTypes {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int empId=8095106;
+		String empName="ramudu";
+		double salary=27000.53;
+		float pi= 3.14f;
+		byte a=(byte) 6;
+		short s=4;
+		char ch='k';
+		long l=7654678;
+		System.out.println(empId);
+		System.out.println(empName);
+		System.out.println(salary);
+		System.out.println(pi);
+		System.out.println(a);
+		System.out.println(s);
+		System.out.println(ch);
+		System.out.println(l);
+
+	}
+
+}
+
+OutPut:-
+8095106
+ramudu
+27000.53
+3.14
+6
+4
+k
+7654678

@@ -1,0 +1,40 @@
+package org.jsp.app9;
+
+import java.util.Stack;
+
+public class StackMainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Stack<Integer> s=new Stack<Integer>();
+		Stack<Integer> s1=new Stack<Integer>();
+		s.add(3);
+		s.add(56);
+		s.push(23);
+		System.out.println(s);
+		s1.push(43);
+		s1.push(98);
+		s1.push(34);
+		s1.add(23);
+		System.out.println(s1);
+		System.out.println(s1.empty());
+		System.out.println(s1.capacity());
+		System.out.println(s1.subList(1, 3));
+		System.out.println(s1.pop());
+		System.out.println(s1.pop());
+		System.out.println(s1.peek());
+		System.out.println(s1);
+	}
+
+}
+output:-
+[3, 56, 23]
+[43, 98, 34, 23]
+false
+10
+[98, 34]
+23
+34
+98
+[43, 98]

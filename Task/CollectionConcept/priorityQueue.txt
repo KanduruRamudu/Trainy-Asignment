@@ -1,0 +1,34 @@
+package org.jsp.app9;
+
+import java.util.PriorityQueue;
+
+public class PriorityQueueMainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		PriorityQueue<Integer> pq=new PriorityQueue<Integer>();
+		pq.add(54);
+		pq.add(12);
+		pq.add(78);
+		pq.add(64);
+		pq.add(34);
+		pq.add(99);
+		pq.add(21);
+		System.out.println(pq);
+		pq.offer(678);
+		System.out.println(pq);
+		System.out.println(pq.peek());
+		System.out.println(pq);
+		System.out.println(pq.poll());
+		System.out.println(pq);
+	}
+
+}
+output:-
+[12, 34, 21, 64, 54, 99, 78]
+[12, 34, 21, 64, 54, 99, 78, 678]
+12
+[12, 34, 21, 64, 54, 99, 78, 678]
+12
+[21, 34, 78, 64, 54, 99, 678]

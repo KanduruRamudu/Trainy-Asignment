@@ -1,0 +1,31 @@
+package day7;
+
+class Father
+{
+	public void house()
+	{
+		System.out.println("red color");
+	}
+}
+class Son extends Father
+{
+	public void property()
+	{
+		System.out.println("2 lands");
+	}
+}
+public class SingleInharitanceMainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Son s=new Son();
+		s.house();
+		s.property();
+	}
+
+}
+
+OutPut:-
+red color
+2 lands

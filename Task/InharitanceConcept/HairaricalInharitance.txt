@@ -1,0 +1,72 @@
+package day7;
+
+class School
+{
+	public String name="ramu";
+	private int rno=1234;
+	protected double marks=58.65;
+	public void studentInfo()
+	{
+		System.out.println("here the student detailes :");
+	}
+	public int getRno() {
+		return rno;
+	}
+	public void setRno(int rno) {
+		this.rno = rno;
+	}
+	@Override
+	public String toString() {
+		return "School [name=" + name + ", rno=" + rno + ", marks=" + marks + "]";
+	}
+	
+	
+}
+ class Senior extends School
+ {
+	 public void senInfo()
+	 { 
+		 System.out.println("8th class to 10th class students are seniors ");
+		 System.out.println("subject 1: maths ");
+		 System.out.println("subject 2: english ");
+	 }
+ }
+ class Juniors extends School
+ {
+	 public void junInfo()
+	 { 
+		 System.out.println("2ed class to 7th class students are juniors ");
+		 System.out.println("subject 1: physics ");
+		 System.out.println("subject 2: telugu ");
+	 }
+ }
+ 
+
+
+public class HiraricalMainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Juniors j=new Juniors();
+		j.junInfo();
+		j.studentInfo();
+		Senior s=new Senior();
+		s.senInfo();
+		s.studentInfo();
+		School school=new School();
+		System.out.println(school);
+	}
+
+}
+
+output:-
+2ed class to 7th class students are juniors 
+subject 1: physics 
+subject 2: telugu 
+here the student detailes :
+8th class to 10th class students are seniors 
+subject 1: maths 
+subject 2: english 
+here the student detailes :
+School [name=ramu, rno=1234, marks=58.65]
